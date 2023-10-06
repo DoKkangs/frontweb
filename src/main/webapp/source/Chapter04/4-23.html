@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let i = 0;
+        for (const element of [1, 2, 3, 4]) {
+            alert(`${i}번째 요소는 ${element}입니다.`);
+            i++;
+        }
+        ["사과","바나나","딸기"].forEach(function(data,idx){
+            alert(idx+1 + ")" + data)
+        })
+
+
+        const numbers = [45, 1, 9, 100, 55, 22, -37] //배열 생성
+        numbers.forEach(myFunction);  // forEach()에 함수 전달
+
+// 함수 실행
+        function myFunction(value, index, array) { 
+            console.log(index, '번째 forEach중');
+            console.log('value', value);
+            console.log('index', index);
+            console.log('array', array);
+            console.log('----------------')
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
